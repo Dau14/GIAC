@@ -337,7 +337,7 @@
                     <h3 class="text-2xl font-semibold mb-4">Translation Services</h3>
                     <p class="text-5xl font-bold text-teal-700 mb-2">R1</p>
                     <p class="text-slate-500 mb-6">per word</p>
-                    <p class="text-sm text-slate-600">English ↔ any official South African language (with editing included).</p>
+                    <p class="text-sm text-slate-600">English ↔ any official South African language in Northern Cape(with editing included).</p>
                     <div class="mt-auto pt-6">
                         <button onclick="smoothScrollTo('contact'); document.getElementById('service-type').value='translation'" class="w-full py-4 bg-teal-600 text-white font-semibold rounded-2xl hover:bg-teal-700 transition">
                             Request Translation
@@ -497,7 +497,11 @@
                     <h2 class="heading-font text-5xl font-bold mb-2">Ready to get started?</h2>
                     <p class="text-slate-400 mb-10">Send us your draft and cover letter or complete the form below. We reply within three working days.</p>
                     
-                   <form id="consultation-form" method="POST" action="https://formspree.io/f/xjgavgal" class="space-y-8">
+                   <form id="consultation-form" method="POST" action="https://api.web3forms.com/submit" class="space-y-8">
+    <input type="hidden" name="access_key" value="51542a95-c161-492c-be94-b730898ed1b2">  <!-- Paste your key here -->
+    <!-- Optional: add honeypot for extra spam protection -->
+    <input type="checkbox" name="botcheck" id="botcheck" style="display:none;" />
+    <!-- rest of your form fields stay exactly the same -->
                         <div class="grid grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-medium tracking-widest text-slate-400 mb-2">FULL NAME</label>
